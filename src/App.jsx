@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./routes/landing/Header.jsx";
+import Footer from "./components/footer/Footer.jsx";
+
 import { RootSection } from "./routes/index";
 
 export default function App() {
@@ -32,7 +34,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<RootSection />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

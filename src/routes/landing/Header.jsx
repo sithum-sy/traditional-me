@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../assets/images/logo.webp";
 import Cart from "../../assets/images/cart-icon.png";
+import openMenu from "../../assets/images/open-menu.svg";
+import closeMenu from "../../assets/images/close-menu.svg";
 
 import ResetLocation from "../../helpers/ResetLocation";
+import "../../core-ui/landing/header.css";
 
 const Header = ({
   loginModal,
@@ -39,9 +41,9 @@ const Header = ({
           <h1>Traditional Me</h1>
         </NavLink>
         <ul
-          className={`navigation-menu flex-row pop-font ${
-            isModalActive ? "active" : ""
-          }`}
+          className={`navigation-menu flex-row pop-font
+        ${isModalActive ? "active" : ""}
+        `}
         >
           <li>
             <NavLink
@@ -205,14 +207,14 @@ const Header = ({
             </div>
           </li>
         </ul>
-        {/* <img
+        <img
           width="50"
           height="50"
           className="burger-bars"
           src={isModalActive ? closeMenu : openMenu}
           alt={isModalActive ? "Close menu" : "Open menu"}
           onClick={showModal}
-        /> */}
+        />
       </nav>
     </header>
   );

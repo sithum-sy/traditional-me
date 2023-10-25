@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Hero from "./Hero.jsx";
 import ScrollUpButton from "../../helpers/ScrollUpBtn";
 // import ContactUsLanding from "./ContactUsLanding";
-// import WelcomeSection from "./WelcomeSection";
+import WelcomeSection from "./WelcomeSection";
 // import OurServices from "./OurServices";
 // import PizzaMenuPreview from "./PizzaMenuPreview";
 // import MenuPricingPreview from "./MenuPricingPreview";
@@ -17,13 +17,13 @@ import ResetLocation from "../../helpers/ResetLocation";
 
 const RootSection = () => {
   useEffect(() => {
-    document.title = "Pizza Time";
+    document.title = "Traditional Me";
     ResetLocation();
   }, []);
   return (
     <React.Fragment>
       <Hero />
-      {/* <WelcomeSection /> */}
+      <WelcomeSection />
       {/* <ContactUsLanding />
       <OurServices />
       <PizzaMenuPreview />

@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import { motion } from "framer-motion";
 import "react-alice-carousel/lib/alice-carousel.css";
 import HeroImage from "../../assets/images/hero/hero-img.webp";
+import "../../core-ui/landing/hero.css";
 
 const Hero = () => {
   return (
     <section className="hero-section">
-      {/* <video autoPlay loop muted playsInline className="hero-video">
-        <source src={HeroImage} type="video/mp4" />
-      </video> */}
       <img src={HeroImage} className="hero-image" />
       <section className="header-info flex-container flex-column txt-center pop-font txt-white">
         <motion.div

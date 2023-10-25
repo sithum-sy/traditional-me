@@ -1,0 +1,147 @@
+/* Header */
+
+header {
+  height: 3rem;
+  top: 0;
+  background-color: var(--light-black);
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  z-index: 999;
+  padding: 2rem;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo */
+.logo-styling {
+  align-items: center;
+  gap: 1rem;
+  width: 5rem;
+  height: 3rem;
+}
+.logo {
+  width: 4rem;
+  height: auto;
+  max-width: 70%;
+  transition: all ease-in-out 0.2s;
+}
+.logo-styling h1 {
+  font-size: 1.5rem;
+  font-family: var(--josefin-font);
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+.logo-styling h1 span {
+  display: block;
+  color: var(--pizza-yellow);
+}
+
+/* NAVIGATION MENU */
+.navigation-menu {
+  display: flex;
+  gap: 2rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.navigation-menu a {
+  transition: all ease-in-out 0.2s;
+}
+/* Login & Cart */
+.login-and-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cart-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-weight: 600;
+}
+.cart-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.burger-bars {
+  width: 2rem;
+  cursor: pointer;
+  margin-right: 0;
+}
+.main-nav .navigation-menu.active .burger-bars {
+  content: url("../assets//images/close-btn.svg");
+}
+
+.header-info span {
+  color: var(--pizza-red);
+  font-family: var(--nothing-font);
+  font-size: 2rem;
+}
+
+.header-info h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: white;
+}
+
+.header-info p {
+  font-size: 1.5rem;
+}
+
+.header-btns {
+  gap: 1.3rem;
+  box-sizing: content-box;
+}
+
+.header-btns a:first-child {
+  color: var(--light-black);
+  background-color: var(--yellow);
+  border: 1px solid transparent;
+}
+
+.header-btns a:last-child {
+  border-width: 1px;
+  border-color: var(--transparent-button);
+  background-color: var(--transparent-button);
+  color: var(--light-black);
+}
+.contact-us-landing {
+  position: relative;
+  overflow-x: hidden;
+  padding: 4rem;
+}
+
+.company-details {
+  gap: 1.5rem;
+  text-align: left;
+  justify-content: space-between;
+  font-family: var(--poppins-font);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.company-details > * {
+  text-align: center;
+}
+
+.company-details h2 {
+  font-family: var(--poppins-font);
+  font-weight: 400;
+}
+
+.company-details p {
+  color: var(--light-gray);
+  font-family: var(--poppins-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
