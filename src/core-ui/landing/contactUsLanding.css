@@ -1,0 +1,18 @@
+.company-details-image {
+  position: absolute;
+  width: 22rem;
+  opacity: 0.8;
+  overflow-y: hidden;
+}
+.company-details-image-two {
+  position: absolute;
+  width: 22rem;
+  opacity: 0.8;
+  overflow-y: hidden;
+}
+.company-details-image-three {
+  position: absolute;
+  width: 22rem;
+  opacity: 0.9;
+  overflow-y: hidden;
+}

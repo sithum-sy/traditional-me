@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "../core-ui/scrollUpBtn.css";
 
 const ScrollUpButton = () => {
   const [visible, setVisible] = useState(false);

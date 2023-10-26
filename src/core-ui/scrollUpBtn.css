@@ -1,0 +1,19 @@
+/* Scroll Button */
+.scroll-button {
+  background-color: var(--light-black);
+  border-radius: 50%;
+  border: 1px solid var(--whitish-gray);
+  color: var(--pizza-red);
+  position: fixed;
+  right: 10px;
+  bottom: 150px;
+  transition: right 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 1.3rem;
+  background-image: url("../assets/images/scroll-arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  opacity: 0.5;
+}

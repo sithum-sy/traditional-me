@@ -6,7 +6,8 @@ import img700 from "../../assets/images/welcome-section/section-one-700.webp";
 import img1440 from "../../assets/images/welcome-section/welcome-section.webp";
 // import PizzaOne from "../../assets/images/welcome-section/pizza-one-parallax.webp";
 // import PizzaTwo from "../../assets/images/welcome-section/pizza-two-parallax.webp";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+import "../../core-ui/landing/welcome-section.css";
 
 const WelcomeSection = () => {
   return (
