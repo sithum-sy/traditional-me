@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./routes/landing/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
-import { RootSection } from "./routes/index";
+import { RootSection, Contact } from "./routes/index";
 
 export default function App() {
   return (
@@ -30,9 +30,13 @@ export default function App() {
         validLogin={validLogin}
         productsQuantity={productsQuantity}
       /> */}
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<RootSection />} />
+
+        {/* <Route exact path="/blog" element={<Blog />} />
+        <Route path="/blog/:name" element={<BlogPost />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

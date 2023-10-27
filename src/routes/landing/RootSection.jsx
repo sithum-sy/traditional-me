@@ -6,14 +6,10 @@ import ContactUsLanding from "./ContactUsLanding";
 import WelcomeSection from "./WelcomeSection";
 import OurServices from "./OurServices";
 import BestSellers from "./BestSellers";
-// import MenuPricingPreview from "./MenuPricingPreview";
-// import Gallery from "./Gallery";
-// import StatsPreview from "./StatsPreview";
-// import MenuSlider from "./MenuSlider";
-// import BlogPreview from "./BlogPreview";
-// import Newsletter from "./Newsletter";
+import BlogPreview from "./BlogPreview";
+import Newsletter from "./Newsletter";
 import ResetLocation from "../../helpers/ResetLocation";
-// import ContactLanding from "./ContactLanding";
+import ContactLanding from "./ContactLanding";
 
 const RootSection = () => {
   useEffect(() => {
@@ -27,13 +23,9 @@ const RootSection = () => {
       <ContactUsLanding />
       <OurServices />
       <BestSellers />
-      {/*<MenuPricingPreview />
-      <Gallery />
-      <StatsPreview />
-      <MenuSlider />
       <Newsletter />
       <BlogPreview />
-      <ContactLanding /> */}
+      <ContactLanding />
       <ScrollUpButton />
     </React.Fragment>
   );

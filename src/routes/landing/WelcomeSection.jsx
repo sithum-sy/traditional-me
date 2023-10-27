@@ -4,37 +4,12 @@ import img375 from "../../assets/images/welcome-section/section-one-375.webp";
 import img700 from "../../assets/images/welcome-section/section-one-700.webp";
 // import img1440 from "../../assets/images/section-one/section-one-1440.webp";
 import img1440 from "../../assets/images/welcome-section/welcome-section.webp";
-// import PizzaOne from "../../assets/images/welcome-section/pizza-one-parallax.webp";
-// import PizzaTwo from "../../assets/images/welcome-section/pizza-two-parallax.webp";
-// import { motion } from "framer-motion";
 import "../../core-ui/landing/welcome-section.css";
 
 const WelcomeSection = () => {
   return (
     <article className="welcome-section">
       <section className="section-2-info flex-container flex-column txt-center pop-font">
-        {/* <motion.img
-          src={PizzaTwo}
-          alt=""
-          className=" pizza-two"
-          initial={{ opacity: 0, translateX: -200 }}
-          whileInView={{
-            opacity: 1,
-            translateX: -100,
-          }}
-          transition={{ duration: 5 }}
-        />
-        <motion.img
-          src={PizzaOne}
-          alt=""
-          className=" pizza-one"
-          initial={{ opacity: 0, translateX: 200 }}
-          whileInView={{
-            opacity: 1,
-            translateX: 100,
-          }}
-          transition={{ duration: 5 }}
-        /> */}
         <h2 className="txt-white">
           Welcome to <span>Traditional Me</span> restaurant
         </h2>

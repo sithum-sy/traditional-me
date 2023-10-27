@@ -54,29 +54,3 @@ hr {
 }
 
 /*Responsive */
-
-@media screen and (min-width: 700px) {
-  footer,
-  .dish-categories {
-    flex-direction: row !important;
-  }
-  .blog-posts-landing {
-    flex-direction: row;
-  }
-
-  .blog-grid {
-    padding-top: 3rem;
-  }
-  .section-10 {
-    justify-content: space-evenly;
-    gap: 5rem;
-  }
-
-  footer {
-    justify-content: space-evenly;
-  }
-  .section-2-info {
-    width: 65%;
-    margin: 0 auto;
-  }
-}
