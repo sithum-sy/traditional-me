@@ -1,5 +1,4 @@
-import { useEffect, useRef } from "react";
-import { useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -14,7 +13,6 @@ const Contact = () => {
       exit={{ opacity: 0, translateX: -300 }}
       transition={{ duration: 1 }}
     >
-      <section className="contact-us-img"></section>
       <section className="contact-us-content pop-font">
         <section className="contact-us-content-txt">
           <h2 className="">Contact us</h2>
@@ -26,8 +24,12 @@ const Contact = () => {
             here to provide the support you need. Looking forward to hearing
             from you!
           </p>
+          <br />
+          <p>Email: support@traditionalme.com</p>
+          <p>Phone: +94 11 2265125</p>
         </section>
       </section>
+      {/* <img className="contact-us-img"></img> */}
     </motion.main>
   );
 };

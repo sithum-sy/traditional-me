@@ -5,7 +5,8 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./routes/landing/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
-import { RootSection, Contact } from "./routes/index";
+import { RootSection, Contact, About } from "./routes/index";
+import Careers from "./routes/careers/Careers.jsx";
 
 export default function App() {
   return (
@@ -30,9 +31,11 @@ export default function App() {
         validLogin={validLogin}
         productsQuantity={productsQuantity}
       /> */}
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<RootSection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/careers" element={<Careers />} />
 
         {/* <Route exact path="/blog" element={<Blog />} />
         <Route path="/blog/:name" element={<BlogPost />} /> */}

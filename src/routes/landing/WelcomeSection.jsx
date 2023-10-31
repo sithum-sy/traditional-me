@@ -14,15 +14,13 @@ const WelcomeSection = () => {
           Welcome to <span>Traditional Me</span> restaurant
         </h2>
         <p>
-          Founded in 1982 we bring pizza slice by slice to the next level!
-          Unique branding and being in the pizza industry is the formula to out
-          success. We do understand what people want and convert desires to
-          unique experiences of taste. Freshness, orignality and quality is only
-          the small part of out priorities. Affortable costs, located almost
-          anywhere you go, amazing online operational system to order food in
-          one click. Easy to navigate pre-order options and amazing options for
-          corporate parties! At Pizaa Time we care about you because you are the
-          one who makes us special!
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages,
         </p>
       </section>
       <LazyLoadImage
@@ -30,7 +28,7 @@ const WelcomeSection = () => {
         src={img375}
         srcSet={`${img1440} 1440w, ${img700} 700w, ${img375} 375w`}
         sizes="(min-width: 1440px) 1440px, (min-width: 700px) 700px, 375px"
-        alt="Pizza Time restaurant interior with people at the tabel and the staff serving the customers"
+        alt=""
       />
     </article>
   );
