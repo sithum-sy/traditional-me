@@ -1,19 +1,22 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import ReactPaginate from 'react-paginate';
+import ReactPaginate from "react-paginate";
 //data
-import allBlogPosts from '../../data/allBlogPosts'
+import allBlogPosts from "../../data/allBlogPosts";
 //components
-import ScrollBtn from "../../helpers/ScrollBtn";
+import ScrollUpBtn from "../../helpers/ScrollUpBtn";
 import ResetLocation from "../../helpers/ResetLocation";
 import BlogPosts from "./BlogPosts";
 
 const Blog = () => {
   const [itemOffset, setItemOffset] = useState(0);
   const [endOffset, setEndOffset] = useState(itemOffset + 5);
-  const [currentBlogPosts, setcurrentBlogPosts] = useState([...allBlogPosts].reverse().slice(itemOffset, endOffset));
-  const [pageCountPosts, setpageCountPosts] = useState(Math.ceil(allBlogPosts.length / 5));
+  const [currentBlogPosts, setcurrentBlogPosts] = useState(
+    [...allBlogPosts].reverse().slice(itemOffset, endOffset)
+  );
+  const [pageCountPosts, setpageCountPosts] = useState(
+    Math.ceil(allBlogPosts.length / 5)
+  );
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * 5) % allBlogPosts.length;
@@ -22,11 +25,12 @@ const Blog = () => {
   };
 
   useEffect(() => {
-    document.title = "Blog | Pizza Time";
+    document.title = "Blog | Traditional Me";
     setEndOffset(itemOffset + 5);
-    setcurrentBlogPosts([...allBlogPosts].reverse().slice(itemOffset, endOffset));
+    setcurrentBlogPosts(
+      [...allBlogPosts].reverse().slice(itemOffset, endOffset)
+    );
     setpageCountPosts(Math.ceil(allBlogPosts.length / 5));
-
   }, [setEndOffset, endOffset, itemOffset]);
   return (
     <motion.main
@@ -38,8 +42,9 @@ const Blog = () => {
     >
       <h2>Blog</h2>
       <p className="blog-intro">
-        Pizza makes everything better. These are some of our favorite pizza
-        blogs that are loaded with recipes and pizza-making tips.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis
+        lectus nulla at volutpat diam ut venenatis.
       </p>
       <section className="blog-grid">
         {currentBlogPosts.map((blogPost, index) => {
@@ -49,15 +54,15 @@ const Blog = () => {
       <ReactPaginate
         className="pagination blog-pagination"
         breakLabel="..."
-        nextLabel=" &#62;"
+        nextLabel=">"
         onPageChange={handlePageClick}
         pageRangeDisplayed={3}
         pageCount={pageCountPosts}
-        previousLabel="&#60;"
+        previousLabel="<"
         renderOnZeroPageCount={null}
       />
-      <ScrollBtn />
+      <ScrollUpBtn />
     </motion.main>
   );
-}
+};
 export default Blog;

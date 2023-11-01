@@ -11,6 +11,9 @@ import "./core-ui/leaflet.css";
 import "./routes/contact/contact.css";
 import "./routes/about/about.css";
 import "./routes/careers/careers.css";
+import "./routes/blog/blog.css";
+import "./routes/blog-post/blogPost.css";
+import "./routes/menu/menu.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

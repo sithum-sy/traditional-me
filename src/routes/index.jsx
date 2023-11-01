@@ -1,6 +1,6 @@
 import RootSection from "./landing/RootSection";
 import Contact from "./contact/Contact";
 import About from "./about/About";
-// import Careers from "./careers/Careers";
+import Blog from "./blog/Blog";
 
-export { RootSection, Contact, About };
+export { RootSection, Contact, About, Blog };
